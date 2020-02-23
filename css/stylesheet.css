@@ -183,7 +183,7 @@ footer{background-color:#fff;padding: 10px 0;}
 footer .copy-right{margin-top: 20px;}
 
 ul.bottom-social li{margin-right: 7px;display: inline-block;text-align: center;}
-ul.bottom-social li a{padding: 7px;display: block;width: 25px;height: 25px;border-radius: 50%;font-size: 19px;color: #ffffff;background: #FFDF00;}
+ul.bottom-social li a{padding: 7px;display: block;width: 25px;height: 25px;border-radius: 50%;font-size: 19px;color: #ffffff;background: #ff0b0b;}
 ul.bottom-social li a i{margin-top: 4px;}
 ul.bottom-social li a:hover, ul.bottom-social li a:focus, ul.bottom-social li a:active{opacity: 0.7;}
 
@@ -511,6 +511,18 @@ header .logo1{
 	text-align: center;
 	margin-top: 26px;
 }
+button{
+	background: 0;
+	border: 0;
+	font: normal normal normal 14px/1.4em brandon-grot-w01-light,sans-serif;
+	margin-top: 45px;
+	text-align: center;
+	color: #0848ff;
+}
+button:hover{
+	color: #ff9a9a;
+    transition: color 0.4s ease 0s;
+}
 
 #works-section p{
 	font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
@@ -518,37 +530,29 @@ header .logo1{
     font-weight: bold;
 }
 
- button{
-	background: 0;
-	border: 0;
-	font: normal normal normal 14px/1.4em brandon-grot-w01-light,sans-serif;
-	margin-top: 45px;
-	text-align: center;
-}
- button:hover{
-	color: #ff9a9a;
-    transition: color 0.4s ease 0s;
-}
+ 
 
 #master-section .foto{
 	background-image: url(../images/Litvinova_Anna.jpg);
 	height: 671px;
-    width: 447px;
+    width: 40%;
     background-repeat: no-repeat;
     background-size: cover;
 	display: inline-block;
 }
 #master-section .about_me{
-	width: 714px;
+	width: 59%;
     display: inline-block;
-    margin-left: 35px;
+    padding-left: 35px;
     font-size: 17px;
 	font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
     font: italic normal normal 20px/1.4em belinda-w00-regular,script;
 	text-align: justify;
+	box-sizing: border-box;
 }
 #master-section .about_me button {
 	margin: 0;
+	color: #ff0b0b;
 }
 
 #priceList-section{
