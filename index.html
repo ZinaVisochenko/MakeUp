@@ -6,17 +6,15 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+	    <link rel="stylesheet" href="css/zerogrid.css" type="text/css">
+	    <link rel="stylesheet" href="css/style.css" type="text/css">
+	    <link rel="stylesheet" href="css/menu.css" type="text/css">
+	    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+	    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 		
-	    <link rel="stylesheet" href="fonts/lobster/lobster.css">
-	    <link rel="stylesheet" href="css/zerogrid.css">
-	    <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" href="css/menu.css">
-	    <link rel="stylesheet" href="css/lightbox.css">
-	    <link rel="stylesheet" href="css/stylesheet.css">
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		
+		<link rel="stylesheet" href="fonts/lobster/lobster.css" type="text/css">
+		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
 
-		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 		<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 	</head>
@@ -24,10 +22,14 @@
 	<body><!-- onload="init();"-->
 		<div id="call_dlg" style="display: none;">
 			<div class="box">
-				Для записи свяжитесь с нами по номеру<br/> +38(093)40 80 587 (Вайбер)<br/> +38(095)00 61 635<br/>
-				<button id="close_btn" onclick="call_dlg_sw();">
-					OK
-				</button>
+				<div class="header">
+					<button id="close_btn" onclick="call_dlg_sw();" title="Закрыть">
+						&times;
+					</button>
+				</div>
+				<div class="body">
+					Для записи свяжитесь с нами по номеру<br/> +38(093)40 80 587 (Вайбер)<br/> +38(095)00 61 635
+				</div>
 			</div>
 		</div>
 		<header>
@@ -37,12 +39,12 @@
 					<div id='cssmenu' class="align-center">
 						<ul>
 						   <li class="active"><a href='index.html'><span>Главная</span></a></li>
-						   <li><a href='archive.html'><span>Услуги</span></a></li>
+						   <li><a href='#services-section'><span>Услуги</span></a></li>
 						   <li><a href='#works-section'><span>Работы</span></a></li>
-						   <li><a href='single.html'><span>Мастер</span></a></li>
-						   <li><a href='archive.html'><span>Отзывы</span></a></li>
-						   <li><a href='single.html'><span>Прайс</span></a></li>
-						   <li class='last'><a href='contact.html'><span>Контакты</span></a></li>
+						   <li><a href='#master-section'><span>Мастер</span></a></li>
+						   <li><a href='#reviews-section'><span>Отзывы</span></a></li>
+						   <li><a href='#priceList-section'><span>Прайс</span></a></li>
+						   <li class='last'><a href='#contacts-section'><span>Контакты</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -169,7 +171,7 @@
 					</div>
 				</section>
 				
-				<section class="content-box box-3 box-style-1"><!--Start Box-->
+				<section class="content-box box-3 box-style-1" id = "reviews-section"><!--Start Box-->
 					<div class="zerogrid">
 						<div class="row">
 							<h2 class="header t-left">Отзывы</h2>
@@ -236,7 +238,7 @@
 								<p>Обучение</p>
 								<div class = "pricelist">
 									<div class = "learn eyelashes">Ресницы:</div>
-									✔ Наращивание ресниц "От А до Я" (6 занятий)- 3100грн
+									✔ Наращивание ресниц "От А до Я" (6 занятий)- 3100грн.<br/>
 									✔ Наращивание ресниц "Легкий старт" (3 занятия)- 1500грн.<br/>
 									✔ Наращивание ресниц "Базовый курс" (4 занятия)- 2200грн.<br/>
 									✔ Ламинирование ресниц (3 занятия)- 1500грн.
@@ -254,7 +256,7 @@
 					</div>
 				</section>
 				
-				<section class="content-box box-4 box-style-3"><!--Start Box-->
+				<section class="content-box box-4 box-style-3" id = "contacts-section"><!--Start Box-->
 					<div class="zerogrid">
 						<div class="row">
 							<div class="col-1-2">
@@ -267,13 +269,13 @@
 									<p>anginalav87@gmail.com</p>
 								</div>
 							</div>
-							<div class="col-1-2">
+							<!--<div class="col-1-2">
 								<div class="wrap-col item">
 									<h2 class="header">Testimonials</h2>
 									<p>Beciegast nveriti vitaesasety kertya aset aplicabrde ertyasnemo eniptaiades uytrsas leyrtertas bytrasade vtreasa.</p>
 									<a href="#" class="button-1">More</a>
 								</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</section>
@@ -316,7 +318,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 		<script>
 	
-			function initWorksSlider(sliderId, imagesPathArr) {			
+			function initWorksSlider(sliderId, imagesPathArr) {
 				imagesPathArr.forEach(function(imagesPath) { addItemToWorkSlider(sliderId, imagesPath); } );
 			
 				var slider = tns({
